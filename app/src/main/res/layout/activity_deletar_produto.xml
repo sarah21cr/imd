@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Cabeçalho Laranja -->
+    <TextView
+        android:id="@+id/headerDeletar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#D97800"
+        android:text="IMDMARKET"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Título da Tela -->
+    <TextView
+        android:id="@+id/titleDeletarProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deletar Produto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/headerDeletar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Campo Código do Produto -->
+    <EditText
+        android:id="@+id/editTextCodigoExcluir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Código do Produto"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/titleDeletarProduto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Layout dos Botões -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTextCodigoExcluir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp">
+
+        <!-- Botão Deletar -->
+        <Button
+            android:id="@+id/buttonDeletar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Deletar"
+            android:textColor="#FFFFFF"
+            android:background="@color/purple"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/buttonLimpar"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Botão Limpar -->
+        <Button
+            android:id="@+id/buttonLimpar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Limpar"
+            android:textColor="#FFFFFF"
+            android:background="@color/purple"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/buttonDeletar"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

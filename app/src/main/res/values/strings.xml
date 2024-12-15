@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ImdMarket</string>
+    <string name="button_cadastro">Cadastro</string>
+    <string name="button_alteracao">Alteração</string>
+    <string name="button_exclusao">Exclusão</string>
+    <string name="button_listagem">Listagem</string>
+
+</resources>
